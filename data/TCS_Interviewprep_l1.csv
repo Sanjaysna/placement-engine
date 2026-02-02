@@ -1,0 +1,11 @@
+Topic,Question Content,Date Sent,Solution/Link,Hint,Status
+Apt (Numbers),"What is the units digit of 2^31? A) 2 B) 4 C) 8 D) 6",,https://www.indiabix.com/aptitude/number-system/,Check cyclicity of 2 (2, 4, 8, 6). Divide power by 4.,
+Apt (Numbers),"If a number 54x3 is divisible by 9, what is the digit x? A) 5 B) 6 C) 1 D) 0",,https://www.geeksforgeeks.org/divisibility-rules/,Sum of digits must be divisible by 9 (5+4+x+3).,
+Apt (Stats),"Find the Mean and Median of: 10, 12, 15, 12, 16. A) 13 & 12 B) 12 & 15 C) 13 & 13 D) 15 & 12",,https://www.indiabix.com/aptitude/statistics/,"Mean is average; Median is middle value after sorting.",
+Apt (Averages),"The average of 5 numbers is 20. If a new number 32 is added, what is the new average? A) 22 B) 24 C) 25 D) 26",,https://www.indiabix.com/aptitude/average/,"New Sum = (Old Average * 5) + 32. Divide by 6.",
+Apt (Profit),"A man buys a cycle for Rs. 1400 and sells it at a loss of 15%. What is the selling price? A) 1190 B) 1200 C) 1100 D) 1090",,https://www.indiabix.com/aptitude/profit-and-loss/,SP = CP * (100 - Loss%)/100.,
+DSA (Basic),Write a program to reverse a number (e.g. 123 -> 321).,,https://www.geeksforgeeks.org/write-a-program-to-reverse-digits-of-a-number/,Use while loop with (n % 10) and (n / 10).,
+DSA (Basic),Find the smallest element in an unsorted array of size N.,,https://www.geeksforgeeks.org/program-to-find-smallest-difference-between-any-two-elements/,Initialize 'min' with first element and loop through.,
+DSA (Strings),Count the number of vowels in a given string 'TCS_EXAM'.,,https://www.geeksforgeeks.org/program-count-vowels-string/,"Iterate through string and check against (a, e, i, o, u).",
+Apt (Numbers),"Which of the following is a prime number? A) 115 B) 119 C) 127 D) 191",,https://www.indiabix.com/aptitude/number-system/,Check divisibility up to square root of the number.,
+Apt (LCM),"Find the HCF of 2/3, 8/9, 64/81. A) 2/81 B) 2/3 C) 64/3 D) 1/81",,https://www.indiabix.com/aptitude/problems-on-hcf-and-lcm/,"HCF of Fractions = HCF of Numerators / LCM of Denominators.",s
