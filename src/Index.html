@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body { background: #0f172a; color: white; }
+    .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+  </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-6">
+  <div class="glass p-8 rounded-2xl shadow-2xl max-w-md w-full text-center">
+    <div class="mb-6">
+      <span class="bg-blue-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">TCS Digital Prep</span>
+    </div>
+    <h1 class="text-4xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400">
+      Placement Engine
+    </h1>
+    <p class="text-gray-400 mb-8">Get 4 curated TCS NQT questions delivered to your inbox every morning at 8:00 AM.</p>
+    
+    <div id="form-container">
+      <input type="email" id="userEmail" placeholder="Enter your gmail" 
+             class="w-full p-4 mb-4 rounded-xl bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500 transition">
+      <button onclick="subscribe()" class="w-full bg-blue-600 hover:bg-blue-700 font-bold py-4 rounded-xl transition transform hover:scale-105">
+        Start My Journey 🚀
+      </button>
+    </div>
+    <div id="success-msg" class="hidden text-emerald-400 font-bold">You're in! Check your inbox tomorrow morning.</div>
+  </div>
+
+  <script>
+    function subscribe() {
+      const email = document.getElementById('userEmail').value;
+      google.script.run.withSuccessHandler(() => {
+        document.getElementById('form-container').classList.add('hidden');
+        document.getElementById('success-msg').classList.remove('hidden');
+      }).addUser(email);
+    }
+  </script>
+</body>
+</html>
